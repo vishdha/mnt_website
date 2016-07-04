@@ -1,0 +1,8 @@
+{
+	"js/mnt.min.js": [
+		"public/js/main.js"
+	],
+	"css/mnt.min.js": [
+		"public/css/mnt.css"
+	]
+}
