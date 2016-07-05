@@ -1,3 +1,37 @@
 .navbar {
 	background-color: rgb(245, 247, 249);
 }
+.h3embellish { border-bottom: solid 2px #66CC99;}
+.para {font-size: 14px;}
+.panel-default .panel-heading{background-color: #00cb6f; color: #fff;}
+.topband{ background-color: #7DC9AB; color: #fff; height: 150px; padding-top: 45px; margin-bottom: 15px; }
+
+.promptpanel {
+	height: 200px;
+}
+
+.footer-powered {
+	display: none;
+}
+
+
+#footerpusher{
+	height: 0px;
+}
+
+@media screen and (min-height: 350px) {
+	#footerpusher{
+		height: 250px;
+	}
+}
+
+/* Colours */
+.bg-lightgreen {background-color: #E3FCDB;}
+.txt-orange {color: #FD8142;}
+.txt-deeporange {color: #E05915;}
+.txt-blue {color: #0C77C3;}
+.mintgreen {color: #66CC99;}
+.txt-darkgreen { color: #00cb6f; }
+
+/* Font formatting */
+.italic {font-style: italic;}

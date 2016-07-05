@@ -2,7 +2,7 @@
 	"js/mnt.min.js": [
 		"public/js/main.js"
 	],
-	"css/mnt.min.js": [
+	"css/mnt.min.css": [
 		"public/css/mnt.css"
 	]
 }
