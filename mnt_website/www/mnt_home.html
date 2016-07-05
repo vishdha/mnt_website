@@ -2,112 +2,115 @@
 <!-- title: MN Technique -->
 
 {%- macro render_question(question, reply, type) -%}
-	<div questiontype="{{ type }}" class="hide">
-	    <div class="txt-darkgreen faq_question">{{ question }}</div>
-		<div class="faq_answer">{{ reply }}</div>
-		<br />
-	</div>
+    <div questiontype="{{ type }}" class="hide">
+        <div class="txt-darkgreen faq_question" style="border-bottom: solid 1px #aaa">{{ question }}</div>
+        <div class="faq_answer">{{ reply }}</div>
+        <br />
+    </div>
 {%- endmacro -%}
 
 {%- macro render_question_list() -%}
-	
-		{{- render_question("What is ERPNext?", 
-							"ERPNext is a comprehensive, feature-rich, free and open source, web-based ERP platform. An active team of developers takes care of maintenance and support. New features are also added to it on a regular basis.", 
-							"N") -}}
+    
+        {{- render_question("What is ERPNext?", 
+                            "ERPNext is a feature-rich, free and open source, web-based ERP system. It is maintained daily by an active team of developers. <br/> New features are added to it regularly.", 
+                            "N") -}}
 
-		{{- render_question("How does ERPNext implementation differ from other ERPs?", 
-							"Most ERP systems charge upfront for installing or subscriptions. In case of ERPNext, there is no charge for trying out the system as-is. You can try out the system either on the ERPNext cloud, or on a server of your own, with the right technical know-how. <br />Once you have started evaluating the system or using it day-to-day in your organization, you can identify gaps for customization needed for your specific business processes. Once such gaps have been identified, you can choose one of the following options:
-							<ul>
-								<li>If the features needed to fill the gaps are generic, you can approach Frappe Technologies for additions to features to ERPNext and pay for the development.</li>
-								<li>If ERPNext fits well everywhere else in your organization and your requirement is organization specific, such that addition to core ERPNext is not possible, service providers like us can help you customize or develop the system.</li>
-							</ul> ",
-							"N") -}}		
+        {{- render_question("How does ERPNext implementation differ from other ERPs?", 
+                            "Most ERP systems charge upfront for installing or subscriptions. In case of ERPNext, there is no charge for trying out the system as-is. You can try out the system either on the <a href='https://erpnext.com/pricing'>ERPNext Cloud</a>, or on a server of your own, with the right technical know-how. <br />Once you have started evaluating the system or using it day-to-day in your organization, you can identify gaps for customization needed for your specific business processes. Once such gaps have been identified, you can choose one of the following options:
+                            <ul>
+                                <li>If the features needed to fill the gaps are generic, you can approach Frappe Technologies for additions to features to ERPNext and pay for the development.</li>
+                                <li>If ERPNext fits well everywhere else in your organization and your requirement is organization specific, such that addition to core ERPNext is not possible, service providers like us can help you customize or develop the system.</li>
+                            </ul> ",
+                            "N") -}}        
 
-		{{- render_question("What are the server and hosting choices available?", 
-    						"You have the following choices: 
-    						<ol>
-    							<li>In-house server.</li>
-    							<li>Remote:
-    								<ol>
-    									<li>ERPNext Cloud</li>
-    									<li>Lease your own server or VPS.</li>
-    								</ol>
-    						", 
-    						"NE") -}}
+        {{- render_question("What are the server and hosting choices available?", 
+                            "You have the following choices: 
+                            <ol>
+                                <li>In-house server.</li>
+                                <li>Remote:
+                                    <ol>
+                                        <li><a href='https://erpnext.com/pricing'>ERPNext Cloud</a></li>
+                                        <li>Lease your own server or VPS.</li>
+                                    </ol>
+                            ", 
+                            "NE") -}}
 
-    	{{- render_question("How much will it cost?", 
-    						"Costs of implementing change as per the following scenarios: 
-    						<ol>
-    							<li>ERPNext software - No charge.</li>
-    							<li>Hosting In-house - Cost of server hardware.</li>
-    							<li><a href='https://erpnext.com/pricing'>ERPNext Cloud</a>: costs as per subscription plan.</li>
+        {{- render_question("How much will it cost?", 
+                            "Costs of implementing change as per the following scenarios: 
+                            <ol>
+                                <li>ERPNext software - No charge.</li>
+                                <li>Hosting In-house - Cost of server hardware.</li>
+                                <li><a href='https://erpnext.com/pricing'>ERPNext Cloud</a>: costs as per subscription plan.</li>
                                 <li>Lease your own server or VPS: costs as per subscription plan.</li>
-    						</ol>", 
-    						"NE") -}}
+                            </ol>", 
+                            "NE") -}}
 
-    	{{- render_question("Whom do we pay?", 
-    						"If ERPNext is hosted on the ERPNext cloud, you pay out to Frappe Technologies. <br />
-    						If you have leased Cloud server providers like Data Center, DigitalOcean, Amazon etc, you would pay them. <br /> For Customization and support, you pay service providers like us",
-    						"N") -}}	
+        {{- render_question("Whom do we pay?", 
+                            "If ERPNext is hosted on the <a href='https://erpnext.com/pricing'>ERPNext Cloud</a>, you pay out to Frappe Technologies. <br />
+                            If you have leased Cloud server providers like Data Center, DigitalOcean, Amazon etc, you would pay them. <br /> For Customization and support, you pay service providers like us",
+                            "N") -}}    
 
-    	{{- render_question("What about Upgrades?", 
-    						"Upgrading ERPNext and Frappe on your own server is free. <br />If you subscribe to the ERPNext cloud plan, upgrades are taken care of by Frappe Technologies. <br/><br/> <i>Upgrades go through smoothly provided customizations are done correctly using the features provided in ERPNext. Our developers can provide an upgrade assessment, identifying those customizations which might cause the upgrade process to fail. Corrective measures can be taken based on this assessment.</i>",
-    						"NE") -}}	
-
-
-    	{{- render_question("What kind of customizations are possible?", 
-    						"The Frappe Framework, the basis of ERPNext, is a powerful framework built using industry-standard design patterns and practices and comes loaded with components for any web app of today It has been developed as a powerful framework that makes the following options possible with relative ease: 
-    						<ol>
-    							<li>Simple customizations</li>
-    							<li>Development of complex apps using the Frappe framework.</li>
-    							<li>Integration with other apps using REST API.</li>
-    						</ol>", 
-    						"NE") -}}	
-
-		{{- render_question("How does MN Technique make money?", 
-		    						"The work we charge for can be divided into development and support. <br />Development includes requirement study, gap analysis, solution design and development. <br />Support tasks may include bug-fixing, hand-holding, training and remotely managing your ERPNext server. <br/><i>Bug-fixing support only covers code which is written by MN Technique's development team.</i>", 
-		    						"NE") -}}	
+        {{- render_question("What about Upgrades?", 
+                            "Upgrading ERPNext and Frappe on your own server is free. <br />If you subscribe to the <a href='https://erpnext.com/pricing'>ERPNext Cloud</a> plan, upgrades are taken care of by Frappe Technologies. <br/><br/> <i>Upgrades go through smoothly provided customizations are done correctly using the features provided in ERPNext. Our developers can provide an upgrade assessment, identifying those customizations which might cause the upgrade process to fail. Corrective measures can be taken based on this assessment.</i>",
+                            "NE") -}}   
 
 
-		{{- render_question("How does MN Technique charge?", 
-		    						"The general pricing equation in ERP space is License + Modifications. As ERPNext is available without any licensing fee, our charges for modifications need to focus on delivering value, so that total cost of ownership (TCO) stays significantly lower than other ERP options.<br />To begin with, a client's requirements are divided into Development Activities and Support Activities. We submit a time estimate for these activities which helps the client to identify the cost of ERPNext Implementation. <br /> We send time-logs (hours spent on identified task) of work done periodically and raise invoices based on these time logs.", 
-		    						"NE") -}}
+        {{- render_question("What kind of customizations are possible?", 
+                            "The Frappe Framework, the basis of ERPNext, is a powerful framework built using industry-standard design patterns and practices and comes loaded with components for any web app of today It has been developed as a powerful framework that makes the following options possible with relative ease: 
+                            <ol>
+                                <li>Simple customizations</li>
+                                <li>Development of complex apps using the Frappe framework.</li>
+                                <li>Integration with other apps using REST API.</li>
+                            </ol>", 
+                            "NE") -}}   
 
-		  {{- render_question("Why T&amp;M is preferred to fixed cost?", 
-		    						"Requirements can change during the implementation process with some features being dropped or new ones added. In such situations, T&amp;M pricing is fair to both client and service provider.", "E") -}}
+        {{- render_question("How does MN Technique make money?", 
+                                    "The work we charge for can be divided into development and support. <br />Development includes requirement study, gap analysis, solution design and development. <br />Support tasks may include bug-fixing, hand-holding, training and remotely managing your ERPNext server. <br/><i>Bug-fixing support only covers code which is written by MN Technique's development team.</i>", 
+                                    "NE") -}}   
+
+
+        {{- render_question("How does MN Technique charge?", 
+                                    "The general pricing equation in ERP space is License + Modifications. As ERPNext is available without any licensing fee, our charges for modifications need to focus on delivering value, so that total cost of ownership (TCO) stays significantly lower than other ERP options.<br />To begin with, a client's requirements are divided into Development Activities and Support Activities. We submit a time estimate for these activities which helps the client to identify the cost of ERPNext Implementation. <br /> We send time-logs (hours spent on identified task) of work done periodically and raise invoices based on these time logs.", 
+                                    "NE") -}}
+
+          {{- render_question("Why T&amp;M is preferred to fixed cost?", 
+                                    "Requirements can change during the implementation process with some features being dropped or new ones added. In such situations, T&amp;M pricing is fair to both client and service provider.", "E") -}}
 {%- endmacro -%}
  
 <div>
-  	<div class="well txt-darkgreen">
-	    <h1 class="h1heading">We help you leverage the power of ERPNext for your business.
-	    </h1>
+    <div class="well txt-darkgreen">
+        <h1 class="h1heading" style="text-align:center;">We help you leverage the power of ERPNext for your business.
+        </h1>
     </div>
 
     <div class="row">
-    	<div class="col-lg-6 col-sm-12">
-    		<div id="newuser" class="well promptpanel">
-    			<h3 class="h3embellish txt-blue">New to ERPNext?</h3>
-    			<p class="para">
-			    	ERPNext is a powerful, open-source web-based ERP platform built for SME's replete with workflows, analytics and ways to integrate dashboards. It grants users a degree of customizability that is not seen in most ERP solutions currently in the market.<br /><br />To know more about ERPNext and the kind of work we do, tap this pane.
-    			</p>
-    		</div>
-    	</div>
-    	<div class="col-lg-6 col-sm-12">
-    		<div id="existinguser" class="well promptpanel">
-	    		<h3 class="h3embellish txt-blue">Already using ERPNext?</h3>
-	    		<p class="para">
-	    			So you have evaluated or maybe even used ERPNext and are aware of its features.
-					You might also have realized that some of those features might serve your needs better through customization.
-					<br /><br />
-					We have addressed some questions you might have regarding that and related issues.
-					Tap this pane to view them.
-	    		</p>
-	    	</div>
-    	</div>
+        <div class="col-lg-6 col-sm-12">
+            <div id="newuser" class="well promptpanel">
+                <h3 class="h3embellish txt-blue">New to ERPNext?</h3>
+                <p class="para">
+                    ERPNext is a powerful, web-based ERP platform built for SME's, replete with workflows, analytics and dashboard integration. It grants its users a degree of customizability not seen in most ERP solutions currently in the market.
+                    <br /><br />
+                    To know more about how we go about 
+                    MN Technique can customize it for your business's unique needs.
+                    We might have the answers to some of your queries regarding that.
+                    Tap this panel to see them.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <div id="existinguser" class="well promptpanel">
+                <h3 class="h3embellish txt-blue">Already using ERPNext?</h3>
+                <p class="para">
+                    So you are aware of ERPNext's features. Maybe you even use some of them (or all of them) in your organization's day-to-day operations. <br /><br />
+                    If you are looking to customize your ERPNext instance, or a different hosting policy, we might have the answers to your questions.
+                    Tap this panel to view them. 
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div id="faq" class="well hide">
-    	{{- render_question_list() -}}
-    </div>	  	
+    <div id="faq" class="well">
+        {{- render_question_list() -}}
+    </div>      
 </div>
 <div id="footerpusher"></div>
