@@ -1,13 +1,24 @@
+body {
+	background-image: url('/files/light_honeycomb.png');
+	background-repeat:  repeat;
+}
+/*
 .navbar {
 	background-color: rgb(245, 247, 249);
-}
+}*/
 .h3embellish { border-bottom: solid 2px #66CC99;}
 .para {font-size: 14px;}
 .panel-default .panel-heading{background-color: #00cb6f; color: #fff;}
-.topband{ background-color: #7DC9AB; color: #fff; height: 150px; padding-top: 45px; margin-bottom: 15px; }
+.h1heading
+{
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+}
 
 .promptpanel {
-	height: 200px;
+	height: 320px;
+	cursor: pointer;
 }
 
 .footer-powered {
@@ -21,7 +32,7 @@
 
 @media screen and (min-height: 350px) {
 	#footerpusher{
-		height: 250px;
+		height: 125px;
 	}
 }
 
@@ -35,3 +46,12 @@
 
 /* Font formatting */
 .italic {font-style: italic;}
+
+.faq_question {
+	font-size: 13pt;
+	border-bottom: solid 1px #aaa;
+	margin-bottom: 5px;
+}
+.faq_answer {
+	font-size: 9pt;
+}	

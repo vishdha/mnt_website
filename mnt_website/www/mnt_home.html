@@ -3,9 +3,8 @@
 
 {%- macro render_question(question, reply, type) -%}
 	<div questiontype="{{ type }}" class="hide">
-	    <b class="txt-darkgreen">{{ question }}</b>
-	    <hr class="txt-orange" />
-		<div>{{ reply }}</div>
+	    <div class="txt-darkgreen faq_question">{{ question }}</div>
+		<div class="faq_answer">{{ reply }}</div>
 		<br />
 	</div>
 {%- endmacro -%}
@@ -13,7 +12,7 @@
 {%- macro render_question_list() -%}
 	
 		{{- render_question("What is ERPNext?", 
-							"ERPNext is a feature-rich, free and open source, web-based ERP system. It is maintained daily by an active team of developers. <br/> New features are added to it regularly.", 
+							"ERPNext is a comprehensive, feature-rich, free and open source, web-based ERP platform. An active team of developers takes care of maintenance and support. New features are also added to it on a regular basis.", 
 							"N") -}}
 
 		{{- render_question("How does ERPNext implementation differ from other ERPs?", 
@@ -52,7 +51,7 @@
     						"N") -}}	
 
     	{{- render_question("What about Upgrades?", 
-    						"Upgrading ERPNext and Frappe on your own server is free. <br />If you subscribe to the ERPNext cloud plan, upgrades are taken care of by Frappe Technologies. <br/><br/> <i>Upgrades work only when the source code for ERPNext and Frappe hasn't been altered as a part of customization. It is best to consult a service provider for customizations.</i>",
+    						"Upgrading ERPNext and Frappe on your own server is free. <br />If you subscribe to the ERPNext cloud plan, upgrades are taken care of by Frappe Technologies. <br/><br/> <i>Upgrades go through smoothly provided customizations are done correctly using the features provided in ERPNext. Our developers can provide an upgrade assessment, identifying those customizations which might cause the upgrade process to fail. Corrective measures can be taken based on this assessment.</i>",
     						"NE") -}}	
 
 
@@ -78,9 +77,9 @@
 		    						"Requirements can change during the implementation process with some features being dropped or new ones added. In such situations, T&amp;M pricing is fair to both client and service provider.", "E") -}}
 {%- endmacro -%}
  
-  <div>
+<div>
   	<div class="well txt-darkgreen">
-	    <h1 style="font-size: 24pt; text-align:center;">We help you leverage the power of ERPNext for your business.
+	    <h1 class="h1heading">We help you leverage the power of ERPNext for your business.
 	    </h1>
     </div>
 
@@ -89,8 +88,7 @@
     		<div id="newuser" class="well promptpanel">
     			<h3 class="h3embellish txt-blue">New to ERPNext?</h3>
     			<p class="para">
-			    	ERPNext is a free, open-source, web-based ERP platform.
-			    	To know more about it go through our FAQ section here.
+			    	ERPNext is a powerful, open-source web-based ERP platform built for SME's replete with workflows, analytics and ways to integrate dashboards. It grants users a degree of customizability that is not seen in most ERP solutions currently in the market.<br /><br />To know more about ERPNext and the kind of work we do, tap this pane.
     			</p>
     		</div>
     	</div>
@@ -98,15 +96,18 @@
     		<div id="existinguser" class="well promptpanel">
 	    		<h3 class="h3embellish txt-blue">Already using ERPNext?</h3>
 	    		<p class="para">
-	    			So you know about ERPNext's features and maybe even use some of them (or all of them) to track your organization's day-to-day operations. Looking for customization or a different setup? Click here.  
+	    			So you have evaluated or maybe even used ERPNext and are aware of its features.
+					You might also have realized that some of those features might serve your needs better through customization.
+					<br /><br />
+					We have addressed some questions you might have regarding that and related issues.
+					Tap this pane to view them.
 	    		</p>
 	    	</div>
     	</div>
     </div>
 
-    <div id="faq" class="well">
+    <div id="faq" class="well hide">
     	{{- render_question_list() -}}
-    </div>	
-  	
-  </div>
- <div id="footerpusher"></div>
+    </div>	  	
+</div>
+<div id="footerpusher"></div>
