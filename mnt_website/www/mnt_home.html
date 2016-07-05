@@ -1,7 +1,7 @@
 <!-- Main component for a primary marketing message or call to action -->
 {%- macro render_question(question, reply) -%}
 <div class="panel panel-default">
-  <div class="panel-heading" style="background-color: #F5FFE8;">
+  <div class="panel-heading">
     <h2 class="panel-title">{{ question }}</h2>
   </div>
   <div class="panel-body">
@@ -13,7 +13,7 @@
 
 {%- macro render_question_list() -%}
 	
-		{{- render_question("What is ERPNext", 
+		{{- render_question("What is ERPNext?", 
 							"ERPNext is a feature-rich, free and open source, web-based ERP system. It is maintained daily by an active team of developers. <br/> New features are added to it regularly.") -}}
 
 		{{- render_question("How does ERPNext implementation differ from other ERPs?", 
@@ -71,8 +71,12 @@
 		    						"Requirements can change during the implementation process with some features being dropped or new ones added. In such situations, T&amp;M pricing is fair to both client and service provider.") -}}
 {%- endmacro -%}
 
+
   <div>
-    <h1 style="font-size: 24pt; text-align:center;">We help you leverage the power of ERPNext for your business.</h1>
+  	<div class="well " >
+	    <h1 style="font-size: 24pt; text-align:center;">We help you leverage the power of ERPNext for your business.
+	    </h1>
+    </div>
 
     <div class="row">
     	<div class="col-lg-6 col-sm-12">
@@ -90,17 +94,18 @@ keep introducing new features to it.
     		</p>
     	</div>
     </div>
-    <div id="faq">
+
+    <div id="faq" class="well">
     	{{- render_question_list() -}}
     </div>	
-    <div id="faq_ex">
-
-    </div>
+   
   </div>
 <style type="text/css">
-	.h3embellish { border-bottom: solid 2px #66CC99; color: #BBB;}
+	.h3embellish { border-bottom: solid 2px #66CC99; color: #2F90D5;}
 	.para {font-size: 14px;}
 	.italic {font-style: italic;}
-	/*.panel-default {background-color: #F5FFE8;}*/
+	.mintgreen {color: #66CC99;}
+	.txtcolor-darkgreen { color: #00cb6f; }
+	.panel-default .panel-heading{background-color: #00cb6f; color: #fff;}
 </style>
 
