@@ -11,7 +11,7 @@ body {
 .panel-default .panel-heading{background-color: #00cb6f; color: #fff;}
 .h1heading
 {
-	font-size: 24pt;
+	font-size: 21pt;
 	font-weight: bold;
 	text-align: center;
 }
@@ -25,15 +25,15 @@ body {
 	display: none;
 }
 
-
-#footerpusher{
-	height: 0px;
+.hero-and-content {
+	margin-bottom: 100px;
+	overflow: auto;
 }
 
-@media screen and (min-height: 350px) {
-	#footerpusher{
-		height: 125px;
-	}
+.page-content-block {
+	background-color: #EEE;
+	border: solid 1px #DFDFDF;
+	padding: 36px;
 }
 
 /* Colours */
