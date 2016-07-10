@@ -1,14 +1,14 @@
-body {
+/*body {
 	background-image: url('/files/light_honeycomb.png');
 	background-repeat:  repeat;
-}
+}*/
 /*
 .navbar {
 	background-color: rgb(245, 247, 249);
 }*/
 .h3embellish { border-bottom: solid 2px #66CC99;}
 .para {font-size: 14px;}
-.panel-default .panel-heading{background-color: #00cb6f; color: #fff;}
+/*.panel-default .panel-heading{ background-color: #00cb6f; color: #fff; } */
 .h1heading
 {
 	font-size: 21pt;
@@ -16,16 +16,12 @@ body {
 	text-align: center;
 }
 
-.promptpanel {
-	height: 320px;
-	cursor: pointer;
-}
-
 .footer-powered {
 	display: none;
 }
 
 .hero-and-content {
+	padding-top: 100px;
 	margin-bottom: 100px;
 	overflow: auto;
 }
@@ -34,6 +30,39 @@ body {
 	background-color: #EEE;
 	border: solid 1px #DFDFDF;
 	padding: 36px;
+}
+
+.rightspacer-10 {
+	margin-right: 10px;
+}
+
+/* Bootstrap override */
+/*.carousel-inner img {
+	height: 300px !important;
+	width: auto !important;
+	margin-left: 25% !important;
+	margin-right: 25% !important;
+}*/
+/*#the-carousel.carousel.slide {
+	width: 100%;
+	max-width: 400px;
+	max-height: 250px;
+	overflow-y: auto;
+}*/
+@media only screen and (min-width : 768px) {
+    .is-table-row {
+        display: table;
+    }
+    .is-table-row [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+.home-promptpanel:hover {
+	border: 1px solid yellow;
+	cursor: pointer;
 }
 
 /* Colours */

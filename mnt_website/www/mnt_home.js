@@ -19,7 +19,7 @@ $(document).ready(function() {
 		}
 
 		$('html, body').animate({
-	        scrollTop: $("#faq").offset().top
+	        scrollTop: $("#faq").offset().top - 100
 	    }, 750);
 	})
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		}
 
 		$('html, body').animate({
-	        scrollTop: $("#faq").offset().top
+	        scrollTop: $("#faq").offset().top - 100
 	    }, 750);
 	})
 

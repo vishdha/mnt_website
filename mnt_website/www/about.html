@@ -22,18 +22,27 @@
 
 	{% if doc.get({"doctype":"About Us Team Member"}) %}
 	<h3>{{ doc.team_members_heading or "Team Members" }}</h3>
-	{% for d in doc.get({"doctype":"About Us Team Member"}) %}
 	<div class="row" itemscope itemtype="http://schema.org/Person">
-		<span class="col-md-2">
-			<div class="avatar avatar-large">
-				<img class="avatar" src="{{ d.image_link }}" style="" itemprop="image">
-			</div>
-		</span>
-		<span class="col-md-10"><h4 itemprop="name">{{ d.full_name }}</h4>
-			<p itemprop="description">{{ d.bio }}</p>
-		</span>
-	</div>
+	{% for d in doc.get({"doctype":"About Us Team Member"}) %}
+		<div class="col-lg-3 col-xs-12">
+			<div class="well">
+	            <div style="text-align: center; max-height: 150px; min-height: 150px; overflow:hidden;">
+	            	{% if d.image_link %}       
+	                	<img class="img-thumbnail" src="{{ d.image_link }}" itemprop="image" style="width: 150px;">
+	            	{% else %}
+	            		 <div class="img-thumbnail" style="background-color: #eee; height:150px; width: 150px;">
+                            <i class="octicon octicon-question text-muted" style="width: 100%; margin-top: 5%"></i>
+                        </div>
+	            	{% endif %}
+	            </div>
+	             <div class="caption" style="text-align:center; padding-top: 10px;">
+	                <label itemprop="name">{{ d.full_name }}</label>
+	                <p itemprop="description">{{ d.bio }}</p>
+	            </div>        
+	        </div>
+		</div>
 	{% endfor %}
+	</div>
 	{% endif %}
 	{{ doc.footer or "" }}
 </article>
