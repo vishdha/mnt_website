@@ -1,7 +1,6 @@
-/*body {
-	background-image: url('/files/light_honeycomb.png');
-	background-repeat:  repeat;
-}*/
+body {
+	background-image: url('/files/background-image.png');
+}
 /*
 .navbar {
 	background-color: rgb(245, 247, 249);
@@ -22,10 +21,8 @@
 	overflow: auto;
 }
 
-.page-content-block {
-	background-color: #EEE;
-	border: solid 1px #DFDFDF;
-	padding: 36px;
+footer {
+	background-color: #16161D;
 }
 
 .rightspacer-10 {
