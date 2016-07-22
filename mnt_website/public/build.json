@@ -3,7 +3,6 @@
 		"public/js/main.js"
 	],
 	"css/mnt.min.css": [
-		"public/css/bootstrap-simplex.css",
 		"public/css/mnt.css"
 	]
 }
