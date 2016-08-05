@@ -1,3 +1,3 @@
-// frappe.ready(function(){
-// 	$('.btn-login-area').addClass('hide');
-// });
+frappe.ready(function(){
+	$('.page-container').css("margin-top","50px");
+});
