@@ -7,7 +7,6 @@
 // });
 
 $(document).ready(function() {
-	$('.btn-login-area').addClass('hide');
 
 	$('#newuser').click(function () {
 		$( "#faq" ).removeClass('hide');
