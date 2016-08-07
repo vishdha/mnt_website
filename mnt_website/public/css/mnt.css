@@ -1,5 +1,10 @@
 body {
+<<<<<<< HEAD
 	background-image: url('/files/background-image.png');
+=======
+	background-image: url('/files/light_honeycomb.png');
+	background-repeat:  repeat;
+>>>>>>> 6716463f97004606cfccec334d5382397c50bb2d
 }
 /*
 .navbar {
@@ -7,7 +12,11 @@ body {
 }*/
 .h3embellish { border-bottom: solid 2px #66CC99;}
 .para {font-size: 14px;}
+<<<<<<< HEAD
 /*.panel-default .panel-heading{ background-color: #00cb6f; color: #fff; } */
+=======
+.panel-default .panel-heading{background-color: #00cb6f; color: #fff;}
+>>>>>>> 6716463f97004606cfccec334d5382397c50bb2d
 .h1heading
 {
 	font-size: 21pt;
@@ -15,6 +24,7 @@ body {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .page-content {
 	padding-top: 100px;
 	margin-bottom: 100px;
@@ -56,6 +66,26 @@ footer {
 .home-promptpanel:hover {
 	border: 1px solid yellow;
 	cursor: pointer;
+=======
+.promptpanel {
+	height: 320px;
+	cursor: pointer;
+}
+
+.footer-powered {
+	display: none;
+}
+
+.hero-and-content {
+	margin-bottom: 100px;
+	overflow: auto;
+}
+
+.page-content-block {
+	background-color: #EEE;
+	border: solid 1px #DFDFDF;
+	padding: 36px;
+>>>>>>> 6716463f97004606cfccec334d5382397c50bb2d
 }
 
 /* Colours */

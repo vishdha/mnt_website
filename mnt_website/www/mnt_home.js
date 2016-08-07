@@ -7,6 +7,10 @@
 // });
 
 $(document).ready(function() {
+<<<<<<< HEAD
+=======
+	$('.btn-login-area').addClass('hide');
+>>>>>>> 6716463f97004606cfccec334d5382397c50bb2d
 
 	$('#newuser').click(function () {
 		$( "#faq" ).removeClass('hide');
@@ -18,7 +22,11 @@ $(document).ready(function() {
 		}
 
 		$('html, body').animate({
+<<<<<<< HEAD
 	        scrollTop: $("#faq").offset().top - 100
+=======
+	        scrollTop: $("#faq").offset().top
+>>>>>>> 6716463f97004606cfccec334d5382397c50bb2d
 	    }, 750);
 	})
 
@@ -33,7 +41,11 @@ $(document).ready(function() {
 		}
 
 		$('html, body').animate({
+<<<<<<< HEAD
 	        scrollTop: $("#faq").offset().top - 100
+=======
+	        scrollTop: $("#faq").offset().top
+>>>>>>> 6716463f97004606cfccec334d5382397c50bb2d
 	    }, 750);
 	})
 
