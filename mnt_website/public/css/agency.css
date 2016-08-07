@@ -49,6 +49,11 @@ h6 {
 .img-centered {
   margin: 0 auto;
 }
+.page-container {
+    padding: 0px;
+    max-width: 106%;
+    margin: auto;
+}
 .bg-light-gray {
   background-color: #eeeeee;
 }
